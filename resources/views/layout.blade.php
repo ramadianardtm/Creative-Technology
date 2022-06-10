@@ -11,8 +11,14 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
         #logo img {
-            width: 100px;
+            width: 120px;
+        }
+
+        html * {
+            font-family: 'Poppins', sans-serif;
         }
 
         #logo {
@@ -20,7 +26,7 @@
         }
 
         header {
-            line-height: 50px;
+            line-height: 62px;
         }
 
         .right-btn {
@@ -31,6 +37,24 @@
             width: 100%;
             color: grey;
         }
+        .btn-signin {
+            height: 30px;
+            border-radius: 30px; 
+            border: 2px;
+            border-style: solid;
+            border-color: #000;
+            background-color:#fff; 
+            color: #000;
+        }
+        .btn-signin:hover {
+            width: 200px; 
+            border-radius: 30px; 
+            border: 2px;
+            border-style: solid;
+            border-color: #000;
+            background-color:#000; 
+            color: #fff;
+        }
 
     </style>
 
@@ -38,9 +62,7 @@
 
 <header class="d-flex justify-content-between pt-2 pb-4">
     <div id="logo" class="d-flex">
-        <div style="height: 100px; width:100px;">
         <a href="/"><img src="https://i.ibb.co/JCtkv8p/Createch-Logo-Fix.png" alt="Logo-Createch"></a>
-        </div>
      </div>
     <div class="text-dark">
         @if (\Illuminate\Support\Facades\Auth::check())
@@ -62,17 +84,17 @@
             <a class="text-dark mx-3" href="/about">About Us</a>
         @endif
     </div>
+
     @if (\Illuminate\Support\Facades\Auth::check())
         <div class="text-dark right-btn">
             @if (\Illuminate\Support\Facades\Auth::user()->role == 'member')
                 <a class="text-dark mx-2" href="/cart">Cart</a>
             @endif
-
             <a class="text-dark mx-2" href="/profile">Profile</a>
             <a class="text-dark mx-2" href="/logout">Sign Out</a>
         </div>
     @else
-        <div class="text-dark right-btn">
+        <div class=" right-btn">
             <a class="text-dark mx-2" href="/login">Sign In</a>
             <a class="text-dark mx-2" href="/register">Sign Up</a>
         </div>
@@ -96,7 +118,7 @@
     </script>
 </body>
 <footer class="text-center pt-5 mt-5 pb-5">
-    © 2021 Tokem, Inc. All rights reserved
+    © 2022 Createch, Inc. All rights reserved
 </footer>
 
 </html>

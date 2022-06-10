@@ -38,14 +38,41 @@
         }
 
         .logincard {
+            margin-top: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 4px #c5c5c5;
             margin-left: 20rem;
             margin-right: 20rem;
+            padding: 10px;
+        }
+        label{
+            color:#3e3d3b; 
+            font-size: 15px; 
+            font-weight:bold;
+        }
+        .form-control{
+            border-radius: 8px;
+            color: #000;
+            font-size: 15px;
+        }
+        .btn-login{
+            background-color: #1e87c3;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: 400;
+        }
+        .btn-login:hover{
+            background-color: #43afed;
+            color: #fff;
+            font-weight: 400;
         }
 
     </style>
     <div class="container">
-        <h4 class="text-center pt-3">Tokem</h4>
-        <h1 class="text-center pb-3">Register</h1>
+        <h1 class="text-center pb-2" style="font-weight: 800; font-size: 60px">Sign Up</h1>
+        <p class="text-center" style="color: #000; font-size:15px;">Already have an account? 
+                        <a href="/login" 
+                      style="color: #1e57d6; font-size: 15px">Log In</a></p>
         <div class="card logincard">
             <div class="card-body update-grid">
                 <form action="" method="post">
@@ -87,7 +114,7 @@
                     @endif
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-success">Create Account</button>
+                        <button type="submit" style="margin-top: 20px;" class="btn btn-block btn-login">Create Account</button>
                     </div>
 
                 </form>
