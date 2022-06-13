@@ -14,7 +14,7 @@
 
     </style>
     <div class="category-container">
-        <h4>Your Transaction Histories</h4>
+        <h4 style="font-weight: bold; font-size:25px;">Your Transaction Histories</h4>
         <br>
         @if ($transaction->count() == 0)
             <p>Your transaction is empty, please shop more !</p>

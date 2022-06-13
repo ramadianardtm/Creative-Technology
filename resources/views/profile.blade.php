@@ -39,7 +39,7 @@
 
     </style>
     <div class="container">
-        <h1 class="text-center p-3">Your Profile</h1>
+        <h1 class="text-center p-3 titleheader">Your Profile</h1>
         <div class="card">
             <div class="card-body update-grid">
                 <form action="" method="post" enctype="multipart/form-data">

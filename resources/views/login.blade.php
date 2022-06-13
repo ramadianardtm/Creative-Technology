@@ -68,7 +68,7 @@
 
     </style>
     <div class="container">
-        <h1 class="text-center pb-2" style="font-weight: 800; font-size: 60px">Log In</h1>
+        <h1 class="text-center pb-2" style="font-weight: 800; font-size: 55px">Log In</h1>
         <p class="text-center" style="color: #000; font-size:15px;">Don't have an account? 
                         <a href="/register" 
                       style="color: #1e57d6; font-size: 15px">Register here</a></p>

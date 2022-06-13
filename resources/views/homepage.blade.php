@@ -37,9 +37,10 @@
         }
 
     </style>
+    <div>
     <div class="home justify-content-center text-center">
         <h3 class="display-4">Level Up Your</h3>
-        <h3 class="display-4 pb-4">Planting Game</h3>
+        <h3 class="display-4 pb-4">Business & Product</h3>
     </div>
     <div class="home banner text-center">
         <img

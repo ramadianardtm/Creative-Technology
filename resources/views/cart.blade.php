@@ -11,6 +11,26 @@
             display: grid;
             grid-template-columns: auto auto auto auto;
         }
+        .btn-add {
+        width: 140px;
+        border-radius: 30px;
+        border: 2px;
+        font-weight: 700px;
+        border-style: solid;
+        border-color: #000;
+        background-color: #000;
+        color: #fff;
+    }
+    .btn-add:hover {
+        width: 140px;
+        border-radius: 30px;
+        border: 2px;
+        font-weight: 700px;
+        border-style: solid;
+        border-color: #a4a4a4;
+        background-color: #a4a4a4;
+        color: #fff;
+    }
 
     </style>
     <div class="category-container">
@@ -47,7 +67,9 @@
             <b>Total : {{ $total_price }}</b>
             <br>
             <br>
-            <a href="/checkout" class="btn btn-success">CHECK OUT</a>
+            <div class="w-100">
+            <a href="/checkout" class="btn btn-add mt-2" style="float:right;">CHECK OUT</a>
+            </div>
 
         @endif
     </div>

@@ -66,10 +66,14 @@
             color: #fff;
             font-weight: 400;
         }
+        .titleheader{
+            font-weight: 800; 
+            font-size: 55px;
+        }
 
     </style>
     <div class="container">
-        <h1 class="text-center pb-2" style="font-weight: 800; font-size: 60px">Sign Up</h1>
+        <h1 class="text-center pb-2 titleheader">Sign Up</h1>
         <p class="text-center" style="color: #000; font-size:15px;">Already have an account? 
                         <a href="/login" 
                       style="color: #1e57d6; font-size: 15px">Log In</a></p>

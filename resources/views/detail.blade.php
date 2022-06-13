@@ -36,6 +36,27 @@
         .pl-8 {
             padding-left: 8rem;
         }
+        .btn-add {
+        width: 140px;
+        border-radius: 30px;
+        border: 2px;
+        font-weight: 700px;
+        border-style: solid;
+        border-color: #000;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .btn-add:hover {
+        width: 140px;
+        border-radius: 30px;
+        border: 2px;
+        font-weight: 700px;
+        border-style: solid;
+        border-color: #a4a4a4;
+        background-color: #a4a4a4;
+        color: #fff;
+    }
 
     </style>
     <div class="detail">
@@ -63,7 +84,7 @@
                                     <input type="number" class="form-control" placeholder="Qty" name="qty">
                                 </div>
                                 <div class=" form-group mt-3">
-                                    <button type="submit" class="btn btn-info">Add To Cart</button>
+                                    <button type="submit" class="btn btn-add">Add To Cart</button>
                                 </div>
                                 @if ($errors->any())
                                     <div class="alert-danger">
